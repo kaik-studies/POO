@@ -6,3 +6,4 @@ System.out.println("Olá...");
 System.out.println("Desculpe...");
 }
 }
+//conteudo referente à aula 2 de POO.
