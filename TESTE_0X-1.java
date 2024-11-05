@@ -7,7 +7,6 @@ public class aula_02 {
 		Scanner myObj = new Scanner(System.in);
 		String userName;
 		userName = myObj.next();
-		 System.out.println("Enter Username ");
 		 System.out.println("Username is: " + userName);
 	}
 }
