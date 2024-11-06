@@ -189,49 +189,40 @@ else { System.out.println("Você, ou seu amigo ou nem você e nem seu amigo são
 } 
 		 }
 	}
-//questão 8
 
+//questão 9
+
+package projeto_aprende_java;
 import java.util.Scanner;
-
-public class CalculadoraSimples {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Digite o primeiro número: ");
-        double num1 = scanner.nextDouble();
-
-        System.out.print("Digite o segundo número: ");
-        double num2 = scanner.nextDouble();
-        System.out.print("Digite um operador (+, -, *, /): ");
-        char operador = scanner.next().charAt(0);
-
-        double resultado;
-        switch (operador) {
-            case '+':
-                resultado = num1 + num2;
-                System.out.println("Resultado: " + num1 + " + " + num2 + " = " + resultado);
-                break;
-            case '-':
-                resultado = num1 - num2;
-                System.out.println("Resultado: " + num1 + " - " + num2 + " = " + resultado);
-                break;
-            case '*':
-                resultado = num1 * num2;
-                System.out.println("Resultado: " + num1 + " * " + num2 + " = " + resultado);
-                break;
-            case '/':
-                if (num2 != 0) {
-                    resultado = num1 / num2;
-                    System.out.println("Resultado: " + num1 + " / " + num2 + " = " + resultado);
-                } else {
-                    System.out.println("Erro: Divisão por zero não é permitida.");
-                }
-                break;
-            default:
-                System.out.println("Operador inválido. Por favor, use +, -, * ou /.");
-                break;
-        }
-        scanner.close();
-    }
+public class atividade_001 {
+	public static void main(String[] args) {
+		Scanner myObj = new Scanner(System.in);
+		int X;
+		int Y;
+		int Z;
+		
+		 System.out.println("Digite um valor.");
+			X = myObj.nextInt();
+			System.out.println("Digite um segundo valor.");
+			Y = myObj.nextInt();
+			System.out.println("Que operação você escolhe: 1 = Subtração; 2 = Soma; 3 = Multiplicação; 4 = Divisão.");
+			Z = myObj.nextInt();
+		switch (Z) {
+		case 1: 
+			System.out.printf("A subtração do primeiro e segundo valor é: %d.", X - Y);
+			break;
+		case 2: 
+			System.out.printf("A soma do primeiro e segundo valor é: %d.", X + Y);
+			break;
+		case 3: 
+			System.out.printf("A multiplicação do primeiro e segundo valor é: %d.", X * Y);
+		break;
+		case 4: 
+			System.out.printf("A divisão do primeiro e segundo valor é: %d.", X / Y);
+			break;
+			default: System.out.println("Você falhou. Re-execute o código.");
+		}
+		 }
 	}
 
 //questão 10
