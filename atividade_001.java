@@ -150,3 +150,88 @@ public class atividade_001 {
 }
 
 //sexta questão
+
+package atividadeUm;
+import java.util.Scanner;
+public class atividade_001 {
+	public static void main(String[] args) {
+		Scanner myObj = new Scanner(System.in);
+		float X;
+		float Y;
+		 System.out.println("Digite sua idade: ");
+	X = myObj.nextInt();
+If (X >= 16) {
+System.out.print("Você pode votar.");
+} else {
+System.out.print("Você não pode votar.");
+}
+		 }
+}
+
+//questão 7
+
+package atividadeUm;
+import java.util.Scanner;
+public class atividade_001 {
+	public static void main(String[] args) {
+		Scanner myObj = new Scanner(System.in);
+		float X;
+		float Y;
+		 System.out.println("Digite sua idade: ");
+	X = myObj.nextInt();
+System.out.println("Digite a idade do seu amigo: ");
+	Y = myObj.nextInt();
+If (X >= 18 && Y >= 18) {
+
+System.out.println("Você e seu amigo atingiram a maioridade.");
+}
+else { System.out.println("Você, ou seu amigo ou nem você e nem seu amigo são maiores de idade.);
+} 
+		 }
+	}
+//questão 8
+
+import java.util.Scanner;
+
+public class CalculadoraSimples {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Digite o primeiro número: ");
+        double num1 = scanner.nextDouble();
+
+        System.out.print("Digite o segundo número: ");
+        double num2 = scanner.nextDouble();
+        System.out.print("Digite um operador (+, -, *, /): ");
+        char operador = scanner.next().charAt(0);
+
+        double resultado;
+        switch (operador) {
+            case '+':
+                resultado = num1 + num2;
+                System.out.println("Resultado: " + num1 + " + " + num2 + " = " + resultado);
+                break;
+            case '-':
+                resultado = num1 - num2;
+                System.out.println("Resultado: " + num1 + " - " + num2 + " = " + resultado);
+                break;
+            case '*':
+                resultado = num1 * num2;
+                System.out.println("Resultado: " + num1 + " * " + num2 + " = " + resultado);
+                break;
+            case '/':
+                if (num2 != 0) {
+                    resultado = num1 / num2;
+                    System.out.println("Resultado: " + num1 + " / " + num2 + " = " + resultado);
+                } else {
+                    System.out.println("Erro: Divisão por zero não é permitida.");
+                }
+                break;
+            default:
+                System.out.println("Operador inválido. Por favor, use +, -, * ou /.");
+                break;
+        }
+        scanner.close();
+    }
+	}
+
+//questão 10
