@@ -170,6 +170,21 @@ System.out.print("Você não pode votar.");
 
 //questão 7
 
+package projeto_aprende_java;
+import java.util.Scanner;
+public class atividade_001 {
+	public static void main(String[] args) {
+		int X = 5;
+		System.out.println("O valor de X é " + X);
+		X++;
+		System.out.println("O valor de X agora é " + X);
+		X--;
+		System.out.println("O valor de X agora é " + X);
+	}
+	}
+
+//questão 8
+
 package atividadeUm;
 import java.util.Scanner;
 public class atividade_001 {
@@ -189,8 +204,6 @@ else { System.out.println("Você, ou seu amigo ou nem você e nem seu amigo são
 } 
 		 }
 	}
-
-
 
 //questão 9
 
