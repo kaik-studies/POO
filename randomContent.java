@@ -14,4 +14,17 @@ if (I == 0) {
   }
 }
 
-//random code execution
+//random code execution #01
+
+package filename.java;
+
+public class filemame {
+  public static void main(String[] args) {
+	  
+for (int Value = 10; Value >= 5; Value--) {
+	System.out.println("The value of a random Integer is " + Value + " right now.");
+}
+  }
+}
+
+//random code execution #02
