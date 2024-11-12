@@ -56,15 +56,61 @@ package filename.java;
 import java.util.Scanner;
 public class filemame {
   public static void main(String[] args) {
-System.out.println("Digite-me sua média final em Eletricidades CA: ");
+System.out.println("Digite-me sua primeira nota em Eletricidades CA: ");
 Scanner myObj = new Scanner(System.in);
-int value;
-value = myObj.nextInt();
+float VALUE1;
+VALUE1 = myObj.nextFloat();
+System.out.println("Digite-me sua segunda nota em Eletricidades CA: ");
+float VALUE2 = myObj.nextFloat();
+float MEDIA = ((VALUE1 + VALUE2)/2);
+int MEDIA_APROVACAO = 6;
+String phrase = MEDIA_APROVACAO != MEDIA ? "aprovado" : "reprovado"; 
+System.out.println("Você foi " + phrase + ".");
 
-String phrase = value >= 6 ? "aprovado" : "reprovado"; 
+  }
+}
+//ATIVIDADE PEDIDA PELO PROFESSOR ACIMA!
+
+//USANDO NOTA
+
+package filename.java;
+import java.util.Scanner;
+public class filemame {
+  public static void main(String[] args) {
+System.out.println("Digite-me sua primeira nota em Eletricidades CA: ");
+Scanner myObj = new Scanner(System.in);
+float VALUE1;
+VALUE1 = myObj.nextFloat();
+System.out.println("Digite-me sua segunda nota em Eletricidades CA: ");
+float VALUE2 = myObj.nextFloat();
+float MEDIA = ((VALUE1 + VALUE2)/2);
+float MEDIA_APROVACAO;
+System.out.println("Qual a média?");
+MEDIA_APROVACAO = myObj.nextFloat();
+String phrase = MEDIA_APROVACAO <= MEDIA ? "aprovado" : "reprovado"; 
 System.out.println("Você foi " + phrase + ".");
 
   }
 }
 
-//ATIVIDADE PEDIDA PELO PROFESSOR ACIMA!
+//USANDO MÉDIA
+
+package filename.java;
+import java.util.Scanner;
+public class filemame {
+  public static void main(String[] args) {
+System.out.println("Digite-me média em Eletricidades CA: ");
+Scanner myObj = new Scanner(System.in);
+float VALUE1;
+VALUE1 = myObj.nextFloat();
+float MEDIA = (VALUE1);
+float MEDIA_APROVACAO;
+System.out.println("Qual a média da sua instituição?");
+MEDIA_APROVACAO = myObj.nextFloat();
+String phrase = MEDIA_APROVACAO <= MEDIA ? "aprovado" : "reprovado"; 
+System.out.println("Você foi " + phrase + ".");
+
+  }
+}
+
+//ACÁ!
