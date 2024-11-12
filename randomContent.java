@@ -49,4 +49,22 @@ for (int Value = 10; Value >= 5; Value--) {
 
 //random code execution #03
 
-              
+
+//ATIVIDADE PEDIDA PELO PROFESSOR ABAIXO!
+
+package filename.java;
+import java.util.Scanner;
+public class filemame {
+  public static void main(String[] args) {
+System.out.println("Digite-me sua média final em Eletricidades CA: ");
+Scanner myObj = new Scanner(System.in);
+int value;
+value = myObj.nextInt();
+
+String phrase = value >= 6 ? "aprovado" : "reprovado"; 
+System.out.println("Você foi " + phrase + ".");
+
+  }
+}
+
+//ATIVIDADE PEDIDA PELO PROFESSOR ACIMA!
