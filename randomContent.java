@@ -28,3 +28,25 @@ for (int Value = 10; Value >= 5; Value--) {
 }
 
 //random code execution #02
+
+package filename.java;
+
+public class filemame {
+  public static void main(String[] args) {
+	  
+for (int Value = 10; Value >= 5; Value--) {
+	System.out.println("The value of a random Integer is " + Value + " right now.");
+	
+	for (int Value2 = 45; Value2 >= 30; Value2-=5) {
+		System.out.println("The value of an inner Integer value is " + Value2 + "right now.");
+		if (Value2 <= 35) { 
+			break;
+		}
+	}
+}
+  }
+}
+
+//random code execution #03
+
+              
