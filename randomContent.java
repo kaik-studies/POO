@@ -114,3 +114,68 @@ System.out.println("Você foi " + phrase + ".");
 }
 
 //ACÁ!
+
+//Right down/below you can see another small code
+
+package atividadeUm;
+import java.util.Scanner;
+public class filenameclass {
+	public static void main(String[] args) {
+		Scanner myObj = new Scanner(System.in);
+		float X;
+		float Y;
+		 System.out.println("Digite um preço de produto.");
+			X = myObj.nextFloat();			 
+			System.out.println("Digite o valor de desconto.");
+				Y = myObj.nextFloat(); 
+				float Z = (X * ((100-Y)/100));
+				System.out.printf(
+						"Seu produto, após os descontos, tem o valor aproximado de %f.", Z);
+		 }
+}
+
+//random activities down below
+
+package filename.java;
+public class filemame {
+  public static void main(String[] args) {
+		String [] weekDays = {"Segunda-Feira", "Terça-Feira", "Quarta-Feira", 
+				"Quinta-Feira", "Sexta-Feira"
+				};
+		for(int i = 0; i <= 4; i++) {
+			System.out.println(weekDays[i]);
+		}
+
+  }
+}
+
+//another one
+
+package atividadeUm;
+import java.util.Scanner;
+public class filenameclass {
+	public static void main(String[] args) {
+		Scanner myObj = new Scanner(System.in);
+		int i;
+		do {
+		System.out.println("Qual o número do dia da semana?");
+		String [] weekDays = {"Oi...?", "Domingo", "Segunda-Feira", "Terça-Feira", "Quarta-Feira", 
+				"Quinta-Feira", "Sexta-Feira", "Sábado"
+				};
+	
+		i = myObj.nextInt();
+		System.out.println(weekDays[i]);
+		
+		if (i <= 0) {
+			
+			System.out.println("Isso não faz sentido.");
+			
+		}
+		else {
+			System.out.println("Boa(m)" + " " + weekDays[i] + "!");
+		}
+		
+		 }
+		while (i > 0 & i <= 7);
+	}
+}
