@@ -67,3 +67,47 @@ public class filemame
 
   }
 
+package filename.java;
+import java.util.Scanner;
+public class filemame
+
+{
+  public static void main(String[] args) {
+	  Scanner myObj = new Scanner(System.in);
+	  System.out.println("Que fruta você deseja? ");
+	  String Fruta = myObj.next().toLowerCase();
+	  
+	  switch (Fruta) {
+	  
+	  case "banana":
+		  System.out.println("6,00");
+		  break; 
+	  case "maçã": 
+		  System.out.println("12,00");
+		  break;
+	  case "maca": 
+		  System.out.println("12,00");
+		  break;
+	  case "maça": 
+		  System.out.println("12,00");
+		  break;
+	  case "macã": 
+		  System.out.println("12,00");
+		  break;
+	  case "laranja":
+		  System.out.println("8,00");
+		  break;
+	  case "mamão":
+		  System.out.println("5,00");
+		  break;
+	  case "melão":
+		  System.out.println("5,00");
+		  break;
+		  default:
+			  System.out.println("Não consta do sistema.");
+			}
+		}
+
+  }
+
+
